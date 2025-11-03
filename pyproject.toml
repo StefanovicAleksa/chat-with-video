@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chat_with_video"
+version = "0.1.0"
+authors = [
+  { name="Your Name", email="your@email.com" },
+]
+description = "A local 'Chat with your Video' application."
+readme = "README.md"
+requires-python = ">=3.10"
+# Add any dependencies here, e.g., "boto3"
+# We will add dependencies as we build new features.
+dependencies = [
+    # "boto3",
+    # "langchain",
+    # "chromadb",
+    # "streamlit",
+]
+
+[tool.setuptools]
+# This is the magic.
+# It tells setuptools that our package code is in the 'main' directory.
+package-dir = {"" = "main"}
